@@ -1,0 +1,120 @@
+:root{
+	--very-dark-blue: hsl(233, 47%, 7%); /*main background*/
+	--dark-desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+	--soft-violet: hsl(277, 64%, 61%);  /*(accent color)*/
+	--white: hsl(0, 0%, 100%); /*(main heading, stats)*/
+	--st-white75: hsla(0, 0%, 100%, 0.75);/*(main paragraph)*/
+	--st-white60 : hsla(0, 0%, 100%, 0.6); /*(stat headings)*/
+}
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+	border-color: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+font-size: 15px;
+}
+
+body{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background: var(--very-dark-blue);
+	color: var(--st-white75);
+	font-family: Inter,sans-serif;
+	width:375px;
+	height:956px;
+	margin:0 auto;
+}
+
+header{
+	position:relative;
+	width: calc(375px - 4em);
+	height: 230px;
+	background: var(--soft-violet);
+	margin-top: 6em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: .5em .5em 0 0;
+
+
+
+}
+
+.image{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: calc(375px - 2em);
+	padding-left: 1em;
+	padding-right: 1em;
+	border-radius: .5em .5em 0 0;
+	opacity:.4;
+	object-fit: cover;
+}
+
+.card{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 2em;
+	background-color: var(--dark-desaturated-blue)
+	width: 375px;
+}
+
+.text{
+	background: var(--dark-desaturated-blue);
+	border-radius: 0 0 .5em .5em;
+}
+
+h1{
+	color: var(--white);
+	font-size: 2.1rem;
+	text-align: center;
+}
+
+p{
+	text-align: center;
+	line-height: 2rem;
+	width: 30ch;
+	margin: 2em auto;
+	color: var(--st-white60);
+}
+
+.card h1 span{
+	color: var(--soft-violet);
+}
+
+.stat{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 1.5em auto;
+}
+.number{
+	width: 100%;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	color: var(--white);
+}
+
+.category{
+	width: 100%;
+	text-transform: uppercase;
+	font-size: .8rem;
+	color: var(--st-white60);
+	letter-spacing: .1rem;
+	text-align: center;
+}
