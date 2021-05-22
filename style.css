@@ -244,6 +244,7 @@ font-size: 15px;
 	}
 
 	.attribution{
+		display: none;
 		width: 100%;
 
 	}
